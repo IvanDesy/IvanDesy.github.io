@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/style_index.css">
     <link rel="stylesheet" href="../css/fonts.css">
+    <link rel="stylesheet" href="../css/animation.css">
 </head>
 
 <body>
@@ -48,7 +49,7 @@
     </header>
     <main>
         <section class="present-page-sect">
-            <div class="container">
+            <div class="container present-page-container">
                 <div class="row text-center">
                     <div class="col-md-6">
                         <div class="title-container">
@@ -156,27 +157,27 @@
                                 <h3>тип сайта</h3>
                                 <select class="selector" name="Type" id="1">
                                     <option selected disabled>Выберите пункт...</option>
-                                    <option value="type-1">Тип 1</option>
-                                    <option value="type-2">Тип 2</option>
-                                    <option value="type-3">Тип 3</option>
+                                    <option value="type-1">Сайт-визитка</option>
+                                    <option value="type-2">Корпоративный</option>
+                                    <option value="type-3">Интернет-магазин</option>
                                 </select>
                             </div>
                             <div class="option-box">
                                 <h3>дизайн сайта</h3>
                                 <select class="selector" name="Design" id="2">
                                     <option selected disabled>Выберите пункт...</option>
-                                    <option value="design-1">Дизайн 1</option>
-                                    <option value="design-2">Дизайн 2</option>
-                                    <option value="design-3">Дизайн 3</option>
+                                    <option value="design-1">Шаблонный</option>
+                                    <option value="design-2">Эксклюзивный</option>
+                                    <option value="design-3">Легендарный</option>
                                 </select>
                             </div>
                             <div class="option-box">
                                 <h3>адаптивность сайта</h3>
                                 <select class="selector" name="Adaptabillity" id="3">
                                     <option selected disabled>Выберите пункт...</option>
-                                    <option value="adaptabillity-1">Адаптивность 1</option>
-                                    <option value="adaptabillity-2">Адаптивность 2</option>
-                                    <option value="adaptabillity-3">Адаптивность 3</option>
+                                    <option value="adaptabillity-1">Для компьютеров</option>
+                                    <option value="adaptabillity-2">Для смартфонов</option>
+                                    <option value="adaptabillity-3">Для компьютеров и смартфонов</option>
                                 </select>
                             </div>
                             <hr class="cc-line">
@@ -257,15 +258,15 @@
                     </div>
                 </div>
                 <div class="row justify-content-center text-center contacts-icons">
-                    <div class="col-3">
+                    <div class="col-lg-3 col-12">
                         <img src="../img/geo.png" alt="">
                         <p>Санкт-Петербург<br>Невский проспект, 11</p>
                     </div>
-                    <div class="col-3">
+                    <div class="col-lg-3 col-12">
                         <img src="../img/konvert.png" alt="">
                         <p>info@companyname.com</p>
                     </div>
-                    <div class="col-3">
+                    <div class="col-lg-3 col-12">
                         <img src="../img/truba.png" alt="">
                         <p>+7 999 999 99 99</p>
                     </div>
@@ -276,22 +277,22 @@
                     <div class="col-8"><textarea name="massage" id="msg1" cols="40" rows="10" placeholder="Сообщение"></textarea></div>
                 </div>
 
-            </div>
-        </section>
+            </div></section>
         <sector class="map-section">
             <div class="container map-container">
                 <div class="row justify-content-center text-center">
                     <div class="col-12">
-                        <img src="../img/google_map.jpg" alt="">
+                    <div class="map"></div>
+<!--                        <img src="../img/google_map.jpg" alt="">-->
                     </div>
                 </div>
             </div>
         </sector>
-    </main>
-    <footer>
-        <p>Copyright 2021 Андрей Браун. Design by Web</p>
+        <footer>
+                        <p>Copyright 2021 Андрей Браун. Design by Web</p> 
     </footer>
-
+    </main> 
+    <script src="../js/script.js"></script>
     <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
 

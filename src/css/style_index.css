@@ -7,6 +7,13 @@
     margin: 30px auto 0px auto;
 }
 
+h2 {
+    font-size: 25px;
+    color: #1a2e43;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
 nav {
     height: 60px;
     line-height: 60px;
@@ -36,10 +43,14 @@ header a:visited {
     width: 100%;
 }
 
-main {
+.present-page-sect{
     width: 100%;
-    height: calc(100% - 60px);
+    height: 100vh;
     background: url(../img/Shadow.png) 100% calc(100% + 34px) no-repeat, url(../img/guy.png) 90% bottom/auto 85% no-repeat, url(../img/BG1.jpg) left top/cover no-repeat;
+}
+.present-page-container p{
+    font-size: 20px;
+ 
 }
 
 h1 {
@@ -52,7 +63,7 @@ h1 {
 .title-container input {
     border: 2px solid #697784;
     border-radius: 5px;
-    font-size: 14px;
+    font-size: 18px;
     color: #697784;
     padding: 5px 12px;
     margin: 60px 15px;
@@ -83,26 +94,12 @@ h1 {
 
 }
 
-.about-me-section {
-    width: 100%;
-}
-
-h2 {
-    font-size: 25px;
-    color: #1a2e43;
-    text-transform: uppercase;
-    font-weight: bold;
-}
 
 .about-me-container{
     padding-top: 110px;
-    padding-bottom: 20px;
-
-}
-
-.about-me-container{
+    padding-bottom: 80px;
     color: #6f7180;
-    margin-top: 150px;
+
 }
 
 .about-me-container img {
@@ -130,7 +127,7 @@ h2 {
 
 .what-i-can-section {
     width: 100%;
-    background: url(../img/BG2.jpg) 100% center/cover no-repeat;
+    background: url(../img/BG2.jpg) center/cover no-repeat;
 }
 
 .what-i-can-container {
@@ -304,6 +301,7 @@ h2 {
     background: url(../img/BG3.jpg) no-repeat;
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
 }
 .statistic-container{
     padding-top: 80px;
@@ -328,7 +326,7 @@ h2 {
     font-size: 13px;
 }
 .contacts-section{
-    background: url(../img/BG4.jpg) 100% center/cover no-repeat;
+    background: url(../img/BG4.jpg) center/cover no-repeat;
 }
 .contacts-container{
     padding-top: 100px;
@@ -340,8 +338,9 @@ h2 {
 .contacts-container hr{
     margin-bottom: 30px;
 }
-.contacts-icons{
-    margin-top: 40px;
+
+.contacts-icons img{
+    margin-top: 30px;
 }
 .contacts-form{
     margin-top: 40px;
@@ -358,17 +357,31 @@ h2 {
     border-radius: 1px;
     padding-left: 5px;
     opacity: 0.8;
+    margin-bottom: 30px;
 }
 .contacts-container h2{
     color: #fff;
 }
+
+.map{
+    background: url(../img/google_map.jpg) center/cover no-repeat;
+    height: 300px;
+    width: 100%;
+}
 .map-section img{
     display: block;
-    width: 100%;
+    text-align: center;
     vertical-align: middle;
 }
-.footer-container{
-    height: 60px;
+footer{
+    height: 90px;
     width: 100%;
     background: #2c3d50;
+}
+
+footer p{
+    color: #fff;
+    text-align: center;
+    font-size: 15px;
+    line-height: 90px;
 }
