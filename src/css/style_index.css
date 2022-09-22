@@ -1,3 +1,6 @@
+body{
+    font-family:  "FranklinGot", sans-serif;
+}
 .orange-line {
     border: none;
     width: 70px;
@@ -86,9 +89,13 @@ h1 {
         z-index: 3;
     }
 
-    .present-page-sect {
+    .present-page-sect::after{
         position: relative;
-        height: 100%;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        width: 100%;
         background: rgba(0, 0, 0, 0.6);
     }
 
