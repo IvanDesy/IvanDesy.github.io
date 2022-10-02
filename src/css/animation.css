@@ -3,7 +3,9 @@ import 'animate.css';
 .menu a {
     color: #fff;
 }
-
+.menu a:hover{
+    color: #fff;
+}
 .menu a:visited {
     color: #fff;
 }
