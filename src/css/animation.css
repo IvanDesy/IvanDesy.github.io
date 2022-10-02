@@ -1,6 +1,111 @@
-.menu a{
+import 'animate.css';
+
+.menu a {
     color: #fff;
 }
-.menu a:visited{
+
+.menu a:visited {
     color: #fff;
+}
+
+.logo {
+    opacity: 0;
+}
+
+@keyframes opacity-0-1 {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.logo {
+    animation: opacity-0-1 3s 0.5s forwards ease;
+}
+
+.menu li {
+    opacity: 0;
+    animation: opacity-0-1 0.3s forwards ease;
+}
+
+.menu li:nth-child(1) {
+    animation-delay: 0.5s;
+}
+
+.menu li:nth-child(2) {
+    animation-delay: 0.7s;
+}
+
+.menu li:nth-child(3) {
+    animation-delay: 1s;
+}
+
+.menu li:nth-child(4) {
+    animation-delay: 1.3s;
+}
+
+.menu li:nth-child(5) {
+    animation-delay: 1.6s;
+}
+
+.menu li:nth-child(6) {
+    animation-delay: 1.9s;
+}
+
+.title-container {
+    transform: scale(0);
+    animation: zoom-in 1s 0.5s forwards ease;
+}
+
+@keyframes zoom-in {
+    from {
+        transform: scale(0);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+.title-container input {
+    transition: 0.2s;
+}
+.title-container input:hover {
+    transform: scale(1.05);
+    color: #fff;
+    background: #213549;
+}
+@media (max-width: 991px) {
+
+    .title-container input:hover {
+        transform: scale(1.05);
+        background: rgba(255, 255, 255, 0.3);
+    }
+}
+.title-container input:active {
+    transform: scale(0.95);
+}
+
+.network {
+    transition: transform 0.2s;
+}
+
+.network:hover {
+    transform: scale(1.2);
+}
+
+.delay-window,
+.close-delay-submit{
+    transition: transform 0.3s;
+}
+.delay-window:hover,
+.close-delay-submit:hover{
+    transform: scale(1.05);
+}
+.delay-window:active,
+.close-delay-submit:active{
+    transform: scale(0.95);
 }

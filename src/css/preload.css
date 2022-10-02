@@ -1,8 +1,21 @@
-body{
+.preloader {
+    background: #fff;
     width: 100%;
-    height: 300px;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
 }
-.preload_item{
+.preloader-thing{
+
+    margin: 20% auto 0 auto;
+    height: 100px;
+    width: 100px;
+}
+.preload_item {
     width: 90px;
     height: 90px;
     border: 10px solid #3f495a;
@@ -10,39 +23,39 @@ body{
     border-top: 15px double #d17700;
     border-radius: 10px;
     animation: spin 2.5s linear infinite;
-    margin: 23% auto 0px auto;
     position: relative;
     z-index: 1;
 }
 
-
-@keyframes spin {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
-}
-.shadows{
-    float: left;
+.shadows {
     width: 100px;
     height: 100px;
-    margin: -30px auto 0px 47%;
+    margin: 0px auto 0px auto;
     animation: spin 2.5s linear infinite;
     z-index: 0;
-    
 }
-.shadow1{
+
+.shadow1 {
     float: left;
     width: 100px;
     height: 100px;
     box-shadow: 0px 0px 20px #e0e0e0;
 }
-.shadow2{
+
+.shadow2 {
     float: left;
     width: 100px;
     height: 100px;
     box-shadow: 0px 0px 20px #e0e0e0 inset;
     margin-left: -100px;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
 }
