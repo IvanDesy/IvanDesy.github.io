@@ -42,36 +42,36 @@ $(document).ready(function () {
         let time = 0;
 
         if (answers[0] == 1) {
-            cost += 5000;
+            cost += 5;
             time += 8;
         } else if (answers[0] == 2) {
-            cost += 10000;
+            cost += 10;
             time += 24;
         } else if (answers[0] == 3) {
-            cost += 20000;
+            cost += 20;
             time += 72;
         }
 
         if (answers[1] == 1) {
-            cost += 5000;
+            cost += 5;
             time += 8;
         } else if (answers[1] == 2) {
-            cost += 10000;
+            cost += 10;
             time += 16;
         } else if (answers[1] == 3) {
-            cost += 20000;
+            cost += 20;
             time += 48;
         }
 
         if (answers[2] == 1 || answers[2] == 2) {
-            cost += 5000;
+            cost += 5;
             time += 8;
         } else if (answers[2] == 3) {
-            cost += 15000;
+            cost += 15;
             time += 32;
         }
 
-        $('#cost').html(cost + ' руб.');
+        $('#cost').html(cost + ' 000 руб.');
         $('#time').html(Math.ceil(time / 24) + ' сут.');
     });
 
@@ -116,6 +116,22 @@ $(document).ready(function () {
             });
         }
 
+    });
+
+    $(window).scroll(() => {
+        let scrollDistance = $(window).scrollTop();
+
+        $(".section").each((i, el) => {
+
+            if ($(el).offset().top - $("nav").outerHeight() - 100 <= scrollDistance) {
+                $("nav a").each((i, el) => {
+                    if ($(el).hasClass("active-section")) {
+                        $(el).removeClass("active-section");
+                    }
+                });
+                $('nav li:eq(' + i + ')').find('a').addClass("active-section");
+            }
+        });
     });
 
 

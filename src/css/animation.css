@@ -1,11 +1,5 @@
 import 'animate.css';
 
-.menu a {
-    color: #fff;
-}
-.menu a:hover{
-    color: #ddd;
-}
 .menu a:visited {
     color: #fff;
 }
@@ -29,8 +23,35 @@ import 'animate.css';
 }
 
 .menu li {
+    transform: scale(1);
     opacity: 0;
     animation: opacity-0-1 0.3s forwards ease;
+    transition: transform 0.2s;
+}
+
+.menu li:hover {
+    transform: scale(1.05);
+}
+
+.menu a:hover{
+    color: #fff;
+}
+
+.active-section{
+    color: #fff;
+}
+.active-section:visited {
+    color: #fff;
+}
+
+
+.menu a:active {
+    color: #ccc;
+}
+
+.menu li:active {
+    color: #ccc;
+    transform: scale(0.95);
 }
 
 .menu li:nth-child(1) {
@@ -75,11 +96,13 @@ import 'animate.css';
 .title-container input {
     transition: 0.2s;
 }
+
 .title-container input:hover {
     transform: scale(1.05);
     color: #fff;
     background: #213549;
 }
+
 @media (max-width: 991px) {
 
     .title-container input:hover {
@@ -87,8 +110,56 @@ import 'animate.css';
         background: rgba(255, 255, 255, 0.3);
     }
 }
+
 .title-container input:active {
     transform: scale(0.95);
+}
+
+.download-button {
+    transform: scale(1);
+    transition: transform 0.2s;
+}
+
+.download-button:hover {
+    transform: scale(1.05);
+}
+
+.download-button:active {
+    transform: scale(0.95);
+}
+
+.visit-site-submit {
+    transform: scale(1);
+    transition: 0.2s;
+}
+
+.visit-site-submit:hover {
+    transform: scale(1.05);
+}
+
+.visit-site-submit:active {
+    transform: scale(0.95);
+}
+
+.cost-calc-submit {
+    transform: scale(1);
+    transition: 0.2s;
+}
+
+.cost-calc-submit:hover {
+    transform: scale(1.05);
+}
+
+.cost-calc-submit:active {
+    transform: scale(0.95);
+}
+
+.contacts-form input:hover{
+    opacity: 0.9;
+}
+
+.contacts-massage:hover, .contacts-massage:active{
+    opacity: 0.9;
 }
 
 .network {
@@ -100,14 +171,16 @@ import 'animate.css';
 }
 
 .delay-window,
-.close-delay-submit{
+.close-delay-submit {
     transition: transform 0.3s;
 }
+
 .delay-window:hover,
-.close-delay-submit:hover{
+.close-delay-submit:hover {
     transform: scale(1.05);
 }
+
 .delay-window:active,
-.close-delay-submit:active{
+.close-delay-submit:active {
     transform: scale(0.95);
 }

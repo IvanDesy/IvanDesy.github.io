@@ -7,6 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <!--
+    <link rel="stylesheet" href="../css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../css/owl.theme.default.min.css">
+-->
     <link rel="stylesheet" href="../css/fonts.css">
     <link rel="stylesheet" href="../css/style_index.css">
     <link rel="stylesheet" href="../css/animation.css">
@@ -33,12 +37,12 @@
                     <div class="px-0 col-xxl-6 col-xl-7 col-lg-8 col-md-9 offset-xxl-4 offset-xl-2 offset-lg-1 offset-md-0 d-none d-md-block">
                         <div class="menu">
                             <ul>
-                                <li> <a href="#about-me">обо мне</a></li>
-                                <li><a href="#what-i-can">услуги</a></li>
-                                <li><a href="#keys">кейсы</a></li>
-                                <li><a href="#cost-calc">прайс</a></li>
-                                <li><a href="#reviews">отзывы</a></li>
-                                <li><a href="#contacts">контакты</a></li>
+                                <li class=""><a href="#about-me">обо мне</a></li>
+                                <li class=""><a href="#what-i-can">услуги</a></li>
+                                <li class=""><a href="#keys">кейсы</a></li>
+                                <li class=""><a href="#cost-calc">прайс</a></li>
+                                <li class=""><a href="#reviews">отзывы</a></li>
+                                <li class=""><a href="#contacts">контакты</a></li>
                             </ul>
                         </div>
                     </div>
@@ -75,7 +79,7 @@
                 </div>
             </div>
         </section>
-        <section class="about-me-section" id="about-me">
+        <section class="about-me-section section" id="about-me">
             <div class="container about-me-container">
                 <div class="row text-center justify-content-center">
                     <div class="col-8">
@@ -91,7 +95,7 @@
                 </div>
             </div>
         </section>
-        <section class="what-i-can-section" id="what-i-can">
+        <section class="what-i-can-section section" id="what-i-can">
             <div class="container what-i-can-container">
                 <div class="row justify-content-center text-center">
                     <div class="col-6">
@@ -124,7 +128,7 @@
 
             </div>
         </section>
-        <section class="keys-section" id="keys">
+        <section class="keys-section section" id="keys">
             <div class="container keys-container">
                 <div class="row justify-content-center text-center">
                     <div class="col-12">
@@ -149,7 +153,7 @@
                             <p>Какая-то комнания</p>
                             <h3>website:</h3>
                             <p>http://www.somedomain.com</p>
-                            <input type="submit" value="VISIT LIVE SITE">
+                            <input class="visit-site-submit" type="submit" value="VISIT LIVE SITE">
                         </div>
                         <div class="col-md-8 offset-md-1 col-12 under-img-2col">
                             <h3>Название проекта</h3>
@@ -159,7 +163,7 @@
                 </div>
             </div>
         </section>
-        <section class="cost-calc-section" id="cost-calc">
+        <section class="cost-calc-section section" id="cost-calc">
             <div class="container cost-calc-container">
                 <div class="row justify-content-center">
                     <div class="col-10">
@@ -206,7 +210,7 @@
                             </div>
                             <div class="row justify-content-center text-center">
                                 <div class="mx-auto">
-                                    <input type="submit" id="cost-calc-submit" value="Рассчитать">
+                                    <input class="cost-calc-submit" type="submit" id="cost-calc-submit" value="Рассчитать">
                                 </div>
 
                             </div>
@@ -248,21 +252,57 @@
                 </div>
             </div>
         </section>
-        <section class="reviews-section" id="reviews">
+        <section class="reviews-section section" id="reviews">
             <div class="container reviews-container">
                 <div class="row justify-content-center text-center">
                     <div class="col-8">
                         <h2>отзывы</h2>
                         <hr class="orange-line">
-                        <img src="../img/photo_reviews.png" alt="">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus libero, sed dicta deleniti porro fugiat.</p>
-                        <p><b>Михаил,</b> Ген директор ПАО "Газпром".</p>
-                        <img src="../img/dots.jpg" alt="">
+
+                        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="../img/photo_reviews.png" class="d-block w-100" alt=".1.">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus libero, sed dicta deleniti porro fugiat.</p>
+                                        <p><b>Михаил,</b> Ген директор ПАО "Газпром".</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../img/Photo-reviews-men_2.png" class="d-block w-100" alt=".2.">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus libero, sed dicta deleniti porro fugiat.</p>
+                                        <p><b>Олег,</b> Главный руководитель OOO "ФИН-банк".</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../img/Photo-reviews-woman.png" class="d-block w-100" alt=".3.">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus libero, sed dicta deleniti porro fugiat.</p>
+                                        <p><b>Александра,</b> Зам. директора OOO "Яндекс".</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Предыдущий</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Следующий</span>
+                            </button>
+                        </div>
+
                     </div>
                 </div>
             </div>
         </section>
-        <section class="contacts-section" id="contacts">
+        <section class="contacts-section section" id="contacts">
             <div class="container contacts-container">
                 <div class="row justify-content-center text-center">
                     <div class="col-12">
@@ -286,9 +326,9 @@
                     </div>
                 </div>
                 <div class="row justify-content-center text-center contacts-form">
-                    <div class="col-4"><input type="text" value="" placeholder="Имя"></div>
-                    <div class="col-4"><input type="text" value="" placeholder="Email"></div>
-                    <div class="col-8"><textarea name="massage" id="msg1" cols="40" rows="10" placeholder="Сообщение"></textarea></div>
+                    <div class="col-4 contacts-name"><input type="text" value="" placeholder="Имя"></div>
+                    <div class="col-4 contacts-email"><input type="text" value="" placeholder="Email"></div>
+                    <div class="col-8"><textarea class="contacts-massage" name="massage" id="msg1" cols="40" rows="10" placeholder="Сообщение"></textarea></div>
                 </div>
                 <div class="row justify-content-center text-center networks">
                     <div class="col-1 del-md network"><img src="../img/fb.png" alt=""></div>
@@ -313,7 +353,7 @@
             <p>Copyright 2021 Андрей Браун. Design by Web</p>
         </footer>
     </main>
-    
+
     <div class="delay-window-block delay-window-display" id="delay-window-block-id">
         <div class="delay-window-bg delay-window-all"></div>
         <a id="close-delay-link" href="#cost-calc">
@@ -325,6 +365,7 @@
     </div>
 
     <script src="../js/jquery-3.6.1.min.js"></script>
+    <!--        <script src="../js/owl.carousel.min.js"></script>-->
     <script src="../js/bootstrap.bundle.min.js"></script>
     <script src="../js/script.js"></script>
 </body>
