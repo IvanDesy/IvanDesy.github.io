@@ -57,7 +57,7 @@ header a {
     line-height: 60px;
     font-size: 13px;
     text-transform: uppercase;
-    color: #ddd;
+    color: red;
 }
 
 header a:visited {
@@ -431,27 +431,18 @@ h1 {
 
 .reviews-container {
     color: #172c40;
-    padding-top: 90px;
-    padding-bottom: 50px;
+    padding-top: 80px;
+    padding-bottom: 40px;
     font-size: 13px;
 }
 
 .reviews-container hr {
-    margin-bottom: 60px;
+    margin-bottom: 50px;
 }
 
-.reviews-container img {
-    margin-bottom: 20px;
-}
+
 .carousel-inner p, .carousel-inner h5{
     color: #1a2e43;
-}
-.carousel-inner img{
-    
-}
-
-.owl-carousel, .carousel-item{
-    display: block;
 }
 
 .contacts-section {
