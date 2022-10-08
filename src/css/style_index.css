@@ -57,7 +57,7 @@ header a {
     line-height: 60px;
     font-size: 13px;
     text-transform: uppercase;
-	
+    color: #ddd;
 }
 
 header a:visited {
