@@ -57,7 +57,7 @@ header a {
     line-height: 60px;
     font-size: 13px;
     text-transform: uppercase;
-    color: #ddd;
+    color: #fff;
 }
 
 header a:visited {
@@ -450,8 +450,8 @@ h1 {
 }
 
 .contacts-container {
-    padding-top: 100px;
-    padding-bottom: 90px;
+    padding-top: 50px;
+    padding-bottom: 130px;
 }
 
 .contacts-container p {
@@ -473,21 +473,31 @@ h1 {
 .contacts-form input {
     width: 100%;
     margin-bottom: 10px;
-    border-radius: 1px;
+    border-radius: 3px;
     padding-left: 5px;
     opacity: 0.8;
 }
 
 .contacts-form textarea {
     width: 100%;
-    border-radius: 1px;
+    border-radius: 3px;
     padding-left: 5px;
     opacity: 0.8;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 
 .contacts-container h2 {
     color: #fff;
+}
+
+.sendButton{
+    padding: 3px 5px;
+    margin-bottom: 50px;
+    border: #1a2e43;
+    border-radius: 5px;
+    background: #fff;
+    color: #1a2e43;
+    opacity: 0.8;
 }
 
 @media(min-width: 576px) {
@@ -502,17 +512,6 @@ h1 {
     }
 }
 
-.map {
-    background: url(../img/google_map.jpg) center/cover no-repeat;
-    height: 300px;
-    width: 100%;
-}
-
-.map-section img {
-    display: block;
-    text-align: center;
-    vertical-align: middle;
-}
 
 footer {
     height: 90px;

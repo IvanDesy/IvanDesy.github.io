@@ -134,6 +134,13 @@ $(document).ready(function () {
         });
     });
 
-   
+    $('form').submit(function (event) {
+        if ($('#inputName').val() == '' || $('#inputEmail').val() == '' || $('#inputMassage').val() == '') {
+            event.preventDefault();
+            alert("Заполните все поля!")
+        };
+    });
+
+
 
 });

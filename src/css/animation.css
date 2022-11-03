@@ -161,6 +161,14 @@ import 'animate.css';
 .contacts-massage:hover, .contacts-massage:active{
     opacity: 0.9;
 }
+.sendButton:hover{
+    transition: transform 0.3s;
+    transform: scale(1.05);
+}
+.sendButton:active{
+    opacity: 0.9;
+    transform: scale(0.95);
+}
 
 .network {
     transition: transform 0.2s;
