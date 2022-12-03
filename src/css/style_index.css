@@ -73,7 +73,7 @@ header a:visited {
 .present-page-sect {
     width: 100%;
     height: 100vh;
-    background: url(../img/Shadow.png) 100% calc(100% + 34px) no-repeat, url(../img/guy.png) 90% bottom/auto 85% no-repeat, url(../img/BG1.jpg) left top/cover no-repeat;
+    background: url(../img/Shadow-min.png) 100% calc(100% + 34px) no-repeat, url(../img/guy-min.png) 90% bottom/auto 85% no-repeat, url(../img/BG1-min.png) left top/cover no-repeat;
 }
 
 .present-page-container p {
@@ -160,7 +160,7 @@ h1 {
     border: 2px solid #6f7180;
     border-radius: 6px;
     width: 160px;
-    background: url(../img/rezume.png)6% 50%/auto no-repeat;
+    background: url(../img/rezume-min.png)6% 50%/auto no-repeat;
 }
 
 .download-button input {
@@ -173,7 +173,7 @@ h1 {
     padding-top: 150px;
     padding-bottom: 90px;
     width: 100%;
-    background: url(../img/BG2.jpg) center/cover no-repeat;
+    background: url(../img/BG2-min.png) center/cover no-repeat;
 }
 
 .what-i-can-container {}
@@ -379,28 +379,28 @@ h1 {
 }
 
 .img-box-smile {
-    background: url(../img/smile.png)100% center no-repeat;
+    background: url(../img/smile-min.png)100% center no-repeat;
     width: 60px;
     height: 60px;
     margin: 0 auto;
 }
 
 .img-box-skobki {
-    background: url(../img/skobki.png) 100% center no-repeat;
+    background: url(../img/skobki-min.png) 100% center no-repeat;
     width: 70px;
     height: 60px;
     margin: 0 auto;
 }
 
 .img-box-galochka {
-    background: url(../img/galochka.png) 100% center no-repeat;
+    background: url(../img/galochka-min.png) 100% center no-repeat;
     width: 70px;
     height: 60px;
     margin: 0 auto;
 }
 
 .img-box-cubok {
-    background: url(../img/cubok.png) 100% center no-repeat;
+    background: url(../img/cubok-min.png) 100% center no-repeat;
     width: 60px;
     height: 60px;
     margin: 0 auto;
@@ -408,7 +408,7 @@ h1 {
 
 .statistic-section {
     margin-top: 80px;
-    background: url(../img/BG3.jpg) no-repeat;
+    background: url(../img/BG3-min.png) no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -446,7 +446,7 @@ h1 {
 }
 
 .contacts-section {
-    background: url(../img/BG4.jpg) center/cover no-repeat;
+    background: url(../img/BG4-min.png) center/cover no-repeat;
 }
 
 .contacts-container {
