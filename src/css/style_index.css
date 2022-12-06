@@ -159,12 +159,13 @@ h1 {
     margin: 30px auto 0px;
     border: 2px solid #6f7180;
     border-radius: 6px;
-    width: 160px;
+    width: 180px;
     background: url(../img/rezume-min.png)6% 50%/auto no-repeat;
 }
 
 .download-button input {
-    margin-left: 15px;
+    margin-left: 30px;
+    margin-right: 10px;
     color: #6f7180;
     background: none;
 }
@@ -584,4 +585,3 @@ footer p {
     color: #1a2e43;
     
 }
-
